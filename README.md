@@ -4,7 +4,11 @@
 
 先到evosuite的github仓库里下载jar包：https://github.com/EvoSuite/evosuite/releases
 
-先编译或者运行一下项目（如果不编译，是不会有`/target/classes`的），然后进入`项目根目录/target/classes/`（可以顺便把evosuite的jar包复制过来），执行以下命令：
+先编译或者运行一下项目（如果不编译，是不会有`/target/classes`的），然后进入`项目根目录/target/classes/`。
+
+这一步请在**操作系统的文件资源管理器**里进行，比如我用的是Windows系统，路径是`C:\mooctest\projects\3419\47795\Triangle`。如果直接在IDE里打开可能会看不到后续需要的目录；此外，可以顺便把evosuite的jar包复制过来。
+
+然后，执行以下命令：
 
 ```shell
 java -jar evosuite-1.0.6.jar -projectCP ./ -class net.mooctest.Triangle 
@@ -12,7 +16,7 @@ java -jar evosuite-1.0.6.jar -projectCP ./ -class net.mooctest.Triangle
 
 `-projectCP`是为了指定生成的路径。这一步用可以用`-help`来显示可用的选项，中间还可以加上`-criterion`指定生成的标准，比如line、branch、cbranch、mutation 、exception，等等。
 
-然后会生成两个文件夹：`evosuite-report/`和`evosuite-tests/`。因为maven插件不可用，所以就手动把evosuite-tests里的测试文件（可能会有嵌套的目录，我这里是`Triangle_ESTest.java`和`Triangle_ESTest_scaffolding.java`）复制到对应maven项目的`test/`目录下运行JUnit测试。
+这里会生成两个文件夹：`evosuite-report/`和`evosuite-tests/`。因为maven插件不可用，所以就手动把evosuite-tests里的测试文件（可能会有嵌套的目录，我这里是`Triangle_ESTest.java`和`Triangle_ESTest_scaffolding.java`）复制到对应maven项目的`test/`目录下运行JUnit测试。
 
 也许你会发现生成的测试用例覆盖率很低，而且低得有点奇怪。我们可以打开生成的测试文件看一下：
 
@@ -46,7 +50,7 @@ public void test0()  throws Throwable  {
 
 这一步可能时间会比较长（具体原因就不说了，大家都知道）。配置完成之后再次运行就可以了。
 
-这一步可能会报错`Missing artifact com.sun:tools:jar:1.0.0`。解决方法也很简单，引入JDK里的tools.jar就好了：
+这一步可能会报错`Missing artifact com.sun:tools:jar:1.0.0`。解决方法也很简单，引入JDK里的tools.jar就好了（记得把这里的版本改成**你自己的**JDK版本，我的版本是1.8.0_191)：
 
 ```xml
 <dependency>
