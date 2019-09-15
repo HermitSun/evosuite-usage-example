@@ -1,10 +1,10 @@
-### evosuite的安装与使用
+## evosuite的安装与使用
 
 目前阶段因为evosuite的官网不可用，只能用jar包凑合一下了。反正jar包也是完整可运行的不是吗（笑）。
 
 先到evosuite的github仓库里下载jar包：https://github.com/EvoSuite/evosuite/releases
 
-然后进入`项目根目录/target/classes/`（可以顺便把evosuite的jar包复制过来），执行以下命令：
+先编译或者运行一下项目（如果不编译，是不会有`/target/classes`的），然后进入`项目根目录/target/classes/`（可以顺便把evosuite的jar包复制过来），执行以下命令：
 
 ```shell
 java -jar evosuite-1.0.6.jar -projectCP ./ -class net.mooctest.Triangle 
@@ -14,7 +14,27 @@ java -jar evosuite-1.0.6.jar -projectCP ./ -class net.mooctest.Triangle
 
 然后会生成两个文件夹：`evosuite-report/`和`evosuite-tests/`。因为maven插件不可用，所以就手动把evosuite-tests里的测试文件（可能会有嵌套的目录，我这里是`Triangle_ESTest.java`和`Triangle_ESTest_scaffolding.java`）复制到对应maven项目的`test/`目录下运行JUnit测试。
 
-但是生成的测试文件其实是不能运行的，因为缺少evosuite的运行环境，需要在pom.xml里增加依赖配置：
+也许你会发现生成的测试用例覆盖率很低，而且低得有点奇怪。我们可以打开生成的测试文件看一下：
+
+```java
+@Test(timeout = 4000)
+public void test0()  throws Throwable  {
+    Triangle triangle0 = null;
+    try {
+        triangle0 = new Triangle((-1794L), (-1794L), (-1794L));
+        fail("Expecting exception: NoClassDefFoundError");
+    } catch(NoClassDefFoundError e) {
+        //
+        // com/sun/tdk/jcov/runtime/Collect
+        //
+        verifyException("net.mooctest.Triangle", e);
+    }
+}
+```
+
+可以发现只有这一个用例，而且报的是这个`NoClassDefFoundError:com/sun/tdk/jcov/runtime/Collect `。相信用过mooctest插件的人都见过这个报错，解决方法也很简单，就是maven-update。然后再次运行上面的命令就可以看到完整的测试用例了。
+
+但是生成的测试文件其实是直接不能运行的，因为缺少evosuite的运行环境，根本过不了编译，需要在pom.xml里增加依赖配置：
 
 ```xml
 <dependency>
