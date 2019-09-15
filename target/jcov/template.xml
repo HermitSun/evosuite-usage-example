@@ -1,0 +1,190 @@
+<?xml version='1.0' encoding='UTF-8'?>
+
+<coverage
+        xmlns='http://java.sun.com/jcov/namespace'
+        xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+        xsi:schemaLocation='http://java.sun.com/jcov/namespace coverage.xsd'>
+
+	<head>
+		<property name='coverage.generator.args' val=''/>
+		<property name='coverage.generator.mode' val='BRANCH'/>
+		<property name='coverage.generator.internal' val='include'/>
+		<property name='coverage.generator.include' val=''/>
+		<property name='coverage.generator.exclude' val=''/>
+		<property name='coverage.generator.caller_include' val='.*'/>
+		<property name='coverage.generator.caller_exclude' val=''/>
+		<property name='coverage.created.date' val='2019-09-15'/>
+		<property name='coverage.created.time' val='12:02:52'/>
+		<property name='coverage.generator.fullversion' val='3.0os.beta-2 built: 10 March 2018'/>
+		<property name='coverage.generator.name' val='jcov'/>
+		<property name='coverage.generator.version' val='3.0'/>
+		<property name='coverage.spec.version' val='1.3'/>
+		<property name='java.runtime.version' val='1.8.0_191-b12'/>
+		<property name='java.version' val='1.8.0_191'/>
+		<property name='os.arch' val='amd64'/>
+		<property name='os.name' val='Windows 10'/>
+		<property name='os.version' val='10.0'/>
+		<property name='user.name' val='syl18'/>
+		<property name='dynamic.collected' val='false'/>
+		<property name='id.count' val='43'/>
+	</head>
+	<package name="net.mooctest" moduleName="no_module">
+		<class name="Triangle" supername="java/lang/Object" checksum="1064897537" source="Triangle.java" flags=' public'>
+			<meth name="&lt;init&gt;" vmsig="(JJJ)V" flags=' public' access="1" cons="true" length="36">
+				<bl s="0" e="35">
+					<methenter s="0" e="35" id="0" count="0"/>
+					<exit s="35" e="35" opcode="return"/>
+				</bl>
+				<lt>0=10;4=3;9=5;14=7;19=12;24=14;29=16;35=18;</lt>
+			</meth>
+			<meth name="isTriangle" vmsig="(Lnet/mooctest/Triangle;)Z" flags=' public' access="1" length="126">
+				<bl s="0" e="10">
+					<methenter s="0" e="10" id="1" count="0"/>
+					<br s="8" e="10">
+						<cond s="124" e="125" id="2" count="0" val="true"/>
+						<cond s="11" e="21" id="3" count="0" val="false"/>
+					</br>
+				</bl>
+				<bl s="11" e="21">
+					<br s="19" e="21">
+						<cond s="124" e="125" id="4" count="0" val="true"/>
+						<cond s="22" e="30" id="5" count="0" val="false"/>
+					</br>
+				</bl>
+				<bl s="22" e="30">
+					<br s="28" e="30">
+						<cond s="124" e="125" id="6" count="0" val="true"/>
+						<cond s="31" e="41" id="7" count="0" val="false"/>
+					</br>
+				</bl>
+				<bl s="31" e="41">
+					<br s="39" e="41">
+						<cond s="124" e="125" id="8" count="0" val="true"/>
+						<cond s="42" e="50" id="9" count="0" val="false"/>
+					</br>
+				</bl>
+				<bl s="42" e="50">
+					<br s="48" e="50">
+						<cond s="124" e="125" id="10" count="0" val="true"/>
+						<cond s="51" e="61" id="11" count="0" val="false"/>
+					</br>
+				</bl>
+				<bl s="51" e="61">
+					<br s="59" e="61">
+						<cond s="124" e="125" id="12" count="0" val="true"/>
+						<cond s="62" e="81" id="13" count="0" val="false"/>
+					</br>
+				</bl>
+				<bl s="62" e="81">
+					<br s="79" e="81">
+						<cond s="124" e="125" id="14" count="0" val="true"/>
+						<cond s="82" e="101" id="15" count="0" val="false"/>
+					</br>
+				</bl>
+				<bl s="82" e="101">
+					<br s="99" e="101">
+						<cond s="124" e="125" id="16" count="0" val="true"/>
+						<cond s="102" e="121" id="17" count="0" val="false"/>
+					</br>
+				</bl>
+				<bl s="102" e="121">
+					<br s="119" e="121">
+						<cond s="124" e="125" id="18" count="0" val="true"/>
+						<cond s="122" e="123" id="19" count="0" val="false"/>
+					</br>
+				</bl>
+				<bl s="122" e="123">
+				</bl>
+				<bl s="124" e="125">
+					<fall s="124" e="125" id="20" count="0"/>
+					<exit s="125" e="125" opcode="ireturn"/>
+				</bl>
+				<lt>0=26;2=29;62=34;91=35;111=36;122=37;124=41;</lt>
+			</meth>
+			<meth name="getType" vmsig="(Lnet/mooctest/Triangle;)Ljava/lang/String;" flags=' public' access="1" length="88">
+				<bl s="0" e="10">
+					<methenter s="0" e="10" id="21" count="0"/>
+					<br s="8" e="10">
+						<cond s="86" e="87" id="22" count="0" val="true"/>
+						<cond s="11" e="22" id="23" count="0" val="false"/>
+					</br>
+				</bl>
+				<bl s="11" e="22">
+					<br s="20" e="22">
+						<cond s="41" e="52" id="24" count="0" val="true"/>
+						<cond s="23" e="34" id="25" count="0" val="false"/>
+					</br>
+				</bl>
+				<bl s="23" e="34">
+					<br s="32" e="34">
+						<cond s="41" e="52" id="26" count="0" val="true"/>
+						<cond s="35" e="40" id="27" count="0" val="false"/>
+					</br>
+				</bl>
+				<bl s="35" e="40">
+					<goto s="38" e="40">
+						<tg s="86" e="87" id="28" count="0"/>
+					</goto>
+				</bl>
+				<bl s="41" e="52">
+					<br s="50" e="52">
+						<cond s="83" e="85" id="29" count="0" val="true"/>
+						<cond s="53" e="64" id="30" count="0" val="false"/>
+					</br>
+				</bl>
+				<bl s="53" e="64">
+					<br s="62" e="64">
+						<cond s="83" e="85" id="31" count="0" val="true"/>
+						<cond s="65" e="76" id="32" count="0" val="false"/>
+					</br>
+				</bl>
+				<bl s="65" e="76">
+					<br s="74" e="76">
+						<cond s="83" e="85" id="33" count="0" val="true"/>
+						<cond s="77" e="82" id="34" count="0" val="false"/>
+					</br>
+				</bl>
+				<bl s="77" e="82">
+					<goto s="80" e="82">
+						<tg s="86" e="87" id="35" count="0"/>
+					</goto>
+				</bl>
+				<bl s="83" e="85">
+				</bl>
+				<bl s="86" e="87">
+					<fall s="86" e="87" id="36" count="0"/>
+					<exit s="87" e="87" opcode="areturn"/>
+				</bl>
+				<lt>0=50;3=52;11=54;35=56;41=59;77=62;83=66;86=70;</lt>
+			</meth>
+			<meth name="diffOfBorders" vmsig="(JJ)J" flags=' public' access="1" length="16">
+				<bl s="0" e="5">
+					<methenter s="0" e="5" id="37" count="0"/>
+					<br s="3" e="5">
+						<cond s="12" e="14" id="38" count="0" val="true"/>
+						<cond s="6" e="11" id="39" count="0" val="false"/>
+					</br>
+				</bl>
+				<bl s="6" e="11">
+					<goto s="9" e="11">
+						<tg s="15" e="15" id="40" count="0"/>
+					</goto>
+				</bl>
+				<bl s="12" e="14">
+				</bl>
+				<bl s="15" e="15">
+					<fall s="15" e="15" id="41" count="0"/>
+					<exit s="15" e="15" opcode="lreturn"/>
+				</bl>
+				<lt>0=78;</lt>
+			</meth>
+			<meth name="getBorders" vmsig="()[J" flags=' public' access="1" length="27">
+				<bl s="0" e="26">
+					<methenter s="0" e="26" id="42" count="0"/>
+					<exit s="26" e="26" opcode="areturn"/>
+				</bl>
+				<lt>0=85;4=86;11=87;18=88;25=89;</lt>
+			</meth>
+		</class>
+	</package>
+</coverage>

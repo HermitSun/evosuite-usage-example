@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite tests="59" failures="0" name="net.mooctest.TriangleTest" time="0.109" errors="0" skipped="0">
+  <properties>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="sun.boot.library.path" value="D:\Java\jdk1.8.0_191\jre\bin"/>
+    <property name="java.vm.version" value="25.191-b12"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="maven.multiModuleProjectDirectory" value="D:\eclipse_win64"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="path.separator" value=";"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="user.script" value=""/>
+    <property name="user.country" value="CN"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="D:\eclipse_win64"/>
+    <property name="java.runtime.version" value="1.8.0_191-b12"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="java.endorsed.dirs" value="D:\Java\jdk1.8.0_191\jre\lib\endorsed"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.io.tmpdir" value="C:\Users\syl18\AppData\Local\Temp\"/>
+    <property name="line.separator" value="
+"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.variant" value=""/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="classworlds.conf" value="D:\apache-maven-3.6.0\bin\..\bin\m2.conf"/>
+    <property name="sun.jnu.encoding" value="GBK"/>
+    <property name="java.library.path" value="D:\Java\jdk1.8.0_191\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\ProgramData\DockerDesktop\version-bin;C:\Program Files\Docker\Docker\Resources\bin;D:\NetSarang\Xshell 6\;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\ProgramData\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\Microsoft SQL Server\110\Tools\Binn\;C:\Program Files\Microsoft SQL Server\120\Tools\Binn\;C:\Program Files\dotnet\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;D:\Android\SDK\platform-tools;C:\WINDOWS\System32\OpenSSH\;D:\nodejs\;D:\CMake\bin;C:\Program Files\CMake\bin;D:\Go\bin;C:\Users\syl18\AppData\Local\Yarn\bin;D:\Redis\;D:\Git\cmd;D:\Ruby26-x64\bin;D:\Anaconda3;D:\Anaconda3\Library\mingw-w64\bin;D:\Anaconda3\Library\usr\bin;D:\Anaconda3\Library\bin;D:\Anaconda3\Scripts;D:\Java\jdk1.8.0_191\bin;D:\Java\jdk1.8.0_191\jre\bin;D:\Ruby24-x64\bin;D:\Python\Python36\Scripts\;D:\Python\Python36\;D:\Python\Python37\Scripts\;D:\Python\Python37\;D:\Python\Python36-32\Scripts;D:\Python\Python36-32;C:\Users\syl18\AppData\Local\Microsoft\WindowsApps;C:\Program Files (x86)\GnuWin32\bin;D:\Android\SDK\platform-tools;D:\apache-ant-1.10.3\bin;D:\Microsoft VS Code\bin;D:\phantomjs-2.1.1-windows\bin;D:\apache-maven-3.6.0\bin;D:\JetBrains\WebStorm 2018.3.1\bin;;D:\nodejs\npm_modules;D:\JetBrains\PyCharm 2018.3.4\bin;;D:\MinGW\bin;C:\Users\syl18\go\bin;D:\JetBrains\GoLand 2019.1.1\bin;;;C:\Users\syl18\AppData\Local\Microsoft\WindowsApps;."/>
+    <property name="maven.conf" value="D:\apache-maven-3.6.0\bin\../conf"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="52.0"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="10.0"/>
+    <property name="library.jansi.path" value="D:\apache-maven-3.6.0\bin\..\lib\jansi-native"/>
+    <property name="user.home" value="C:\Users\syl18"/>
+    <property name="user.timezone" value="Asia/Shanghai"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="file.encoding" value="GBK"/>
+    <property name="user.name" value="syl18"/>
+    <property name="java.class.path" value="D:\apache-maven-3.6.0\bin\..\boot\plexus-classworlds-2.5.2.jar"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.home" value="D:\Java\jdk1.8.0_191\jre"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher -file C:/mooctest/projects/3419/47795/Triangle -s C:/mooctest/projects/3419/47795/Triangle\.mvn\settings.xml test cn.edu.nju:mcnode-maven-plugin:result"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.language" value="zh"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="1.8.0_191"/>
+    <property name="java.ext.dirs" value="D:\Java\jdk1.8.0_191\jre\lib\ext;C:\WINDOWS\Sun\Java\lib\ext"/>
+    <property name="sun.boot.class.path" value="D:\Java\jdk1.8.0_191\jre\lib\resources.jar;D:\Java\jdk1.8.0_191\jre\lib\rt.jar;D:\Java\jdk1.8.0_191\jre\lib\sunrsasign.jar;D:\Java\jdk1.8.0_191\jre\lib\jsse.jar;D:\Java\jdk1.8.0_191\jre\lib\jce.jar;D:\Java\jdk1.8.0_191\jre\lib\charsets.jar;D:\Java\jdk1.8.0_191\jre\lib\jfr.jar;D:\Java\jdk1.8.0_191\jre\classes"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="maven.home" value="D:\apache-maven-3.6.0\bin\.."/>
+    <property name="file.separator" value="\"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.desktop" value="windows"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+  </properties>
+  <testcase classname="net.mooctest.TriangleTest" name="teste00" time="0.016"/>
+  <testcase classname="net.mooctest.TriangleTest" name="teste01" time="0"/>
+  <testcase classname="net.mooctest.TriangleTest" name="teste02" time="0"/>
+  <testcase classname="net.mooctest.TriangleTest" name="teste03" time="0.002"/>
+  <testcase classname="net.mooctest.TriangleTest" name="teste04" time="0.002"/>
+  <testcase classname="net.mooctest.TriangleTest" name="teste05" time="0.001"/>
+  <testcase classname="net.mooctest.TriangleTest" name="teste06" time="0.005"/>
+  <testcase classname="net.mooctest.TriangleTest" name="teste07" time="0.003"/>
+  <testcase classname="net.mooctest.TriangleTest" name="teste08" time="0.001"/>
+  <testcase classname="net.mooctest.TriangleTest" name="teste09" time="0.001"/>
+  <testcase classname="net.mooctest.TriangleTest" name="teste10" time="0.001"/>
+  <testcase classname="net.mooctest.TriangleTest" name="teste11" time="0.03"/>
+  <testcase classname="net.mooctest.TriangleTest" name="teste12" time="0.001"/>
+  <testcase classname="net.mooctest.TriangleTest" name="teste13" time="0.001"/>
+  <testcase classname="net.mooctest.TriangleTest" name="teste14" time="0.001"/>
+  <testcase classname="net.mooctest.TriangleTest" name="teste15" time="0"/>
+  <testcase classname="net.mooctest.TriangleTest" name="teste16" time="0"/>
+  <testcase classname="net.mooctest.TriangleTest" name="teste17" time="0.001"/>
+  <testcase classname="net.mooctest.TriangleTest" name="teste18" time="0.001"/>
+  <testcase classname="net.mooctest.TriangleTest" name="teste19" time="0"/>
+  <testcase classname="net.mooctest.TriangleTest" name="teste20" time="0.001"/>
+  <testcase classname="net.mooctest.TriangleTest" name="teste21" time="0.001"/>
+  <testcase classname="net.mooctest.TriangleTest" name="teste22" time="0.001"/>
+  <testcase classname="net.mooctest.TriangleTest" name="teste23" time="0"/>
+  <testcase classname="net.mooctest.TriangleTest" name="teste24" time="0"/>
+  <testcase classname="net.mooctest.TriangleTest" name="teste25" time="0.002"/>
+  <testcase classname="net.mooctest.TriangleTest" name="testIsTriangle10" time="0.001"/>
+  <testcase classname="net.mooctest.TriangleTest" name="testIsTriangle11" time="0.001"/>
+  <testcase classname="net.mooctest.TriangleTest" name="testIsTriangle12" time="0.001"/>
+  <testcase classname="net.mooctest.TriangleTest" name="testIsTriangle13" time="0.001"/>
+  <testcase classname="net.mooctest.TriangleTest" name="testIsTriangle14" time="0.002"/>
+  <testcase classname="net.mooctest.TriangleTest" name="testIsTriangle15" time="0.003"/>
+  <testcase classname="net.mooctest.TriangleTest" name="testIsTriangle16" time="0.001"/>
+  <testcase classname="net.mooctest.TriangleTest" name="testIsTriangle17" time="0.001"/>
+  <testcase classname="net.mooctest.TriangleTest" name="testIsTriangle18" time="0.001"/>
+  <testcase classname="net.mooctest.TriangleTest" name="testIsTriangle19" time="0.002"/>
+  <testcase classname="net.mooctest.TriangleTest" name="testIsTriangle20" time="0.001"/>
+  <testcase classname="net.mooctest.TriangleTest" name="testIsTriangle21" time="0.001"/>
+  <testcase classname="net.mooctest.TriangleTest" name="testIsTriangle22" time="0.001"/>
+  <testcase classname="net.mooctest.TriangleTest" name="testIsTriangle23" time="0.001"/>
+  <testcase classname="net.mooctest.TriangleTest" name="testIsTriangle24" time="0.001"/>
+  <testcase classname="net.mooctest.TriangleTest" name="testIsTriangle25" time="0.001"/>
+  <testcase classname="net.mooctest.TriangleTest" name="testIsTriangle26" time="0.004"/>
+  <testcase classname="net.mooctest.TriangleTest" name="testIsTriangle27" time="0.004"/>
+  <testcase classname="net.mooctest.TriangleTest" name="testIsTriangle28" time="0"/>
+  <testcase classname="net.mooctest.TriangleTest" name="testIsTriangle29" time="0"/>
+  <testcase classname="net.mooctest.TriangleTest" name="testIsTriangle30" time="0.001"/>
+  <testcase classname="net.mooctest.TriangleTest" name="testIsTriangle31" time="0.001"/>
+  <testcase classname="net.mooctest.TriangleTest" name="testIsTriangle32" time="0"/>
+  <testcase classname="net.mooctest.TriangleTest" name="testIsTriangle33" time="0"/>
+  <testcase classname="net.mooctest.TriangleTest" name="testIsTriangle2" time="0.001"/>
+  <testcase classname="net.mooctest.TriangleTest" name="testIsTriangle3" time="0.001"/>
+  <testcase classname="net.mooctest.TriangleTest" name="testIsTriangle4" time="0.001"/>
+  <testcase classname="net.mooctest.TriangleTest" name="testIsTriangle5" time="0.002"/>
+  <testcase classname="net.mooctest.TriangleTest" name="testIsTriangle6" time="0.001"/>
+  <testcase classname="net.mooctest.TriangleTest" name="testIsTriangle7" time="0"/>
+  <testcase classname="net.mooctest.TriangleTest" name="testIsTriangle8" time="0"/>
+  <testcase classname="net.mooctest.TriangleTest" name="testIsTriangle9" time="0"/>
+  <testcase classname="net.mooctest.TriangleTest" name="testIsTriangle" time="0.001"/>
+</testsuite>
