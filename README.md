@@ -6,7 +6,7 @@
 
 先编译或者运行一下项目（如果不编译，是不会有`/target/classes`的），然后进入`项目根目录/target/classes/`。
 
-这一步请在**操作系统的文件资源管理器**里进行，比如我用的是Windows系统，路径是`C:\mooctest\projects\3419\47795\Triangle`。如果直接在IDE里打开可能会看不到后续需要的目录；此外，可以顺便把evosuite的jar包复制过来。
+这一步请在**操作系统的文件资源管理器**里进行，比如我用的是Windows系统，路径是`C:\mooctest\projects\3419\47795\Triangle`；如果直接在IDE里打开，可能会看不到上述的目录。此外，可以顺便把evosuite的jar包复制过来，就不用绝对路径了。
 
 然后，执行以下命令：
 
