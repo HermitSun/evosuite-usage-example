@@ -44,6 +44,36 @@ public void test0()  throws Throwable  {
 
 > 这一点不确定，可能是我的打开方式不对。
 
+需要强调的是，在复制生成的用例的时候，需要将evosuite的辅助方法换成JUnit的异常捕获机制。以前文为例，以下的代码是无法运行的，因为缺少verifyException方法：
+
+```java
+@Test(timeout = 4000)
+public void test0()  throws Throwable  {
+    Triangle triangle0 = null;
+    try {
+        triangle0 = new Triangle((-1794L), (-1794L), (-1794L));
+        fail("Expecting exception: NoClassDefFoundError");
+    } catch(NoClassDefFoundError e) {
+        //
+        // com/sun/tdk/jcov/runtime/Collect
+        //
+        verifyException("net.mooctest.Triangle", e);
+    }
+}
+```
+
+所以，我们应该把代码改成这样：
+
+```java
+@Test(timeout = 4000, expect = NoClassDefFoundError.class)
+public void test0()  throws Throwable  {
+    Triangle triangle0 = null;
+    triangle0 = new Triangle((-1794L), (-1794L), (-1794L));
+}
+```
+
+这样就能运行了。当然，这只是一个例子，实际生成的代码可能不是这样。
+
 如果需要本地运行，就需要进一步在`pom.xml`里增加依赖配置：
 
 ```xml
