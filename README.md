@@ -1,6 +1,6 @@
 ## evosuite的安装与使用
 
-目前阶段因为evosuite的官网不可用，只能用jar包凑合一下了。反正jar包也是完整可运行的不是吗（笑）。
+目前因为evosuite的官网不可用，只能用jar包凑合一下了。反正jar包也是完整可运行的不是吗（笑）。
 
 先到evosuite的github仓库里下载jar包：https://github.com/EvoSuite/evosuite/releases
 
