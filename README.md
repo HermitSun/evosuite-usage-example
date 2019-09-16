@@ -50,7 +50,8 @@ public void test0()  throws Throwable  {
 }
 ```
 
-可以发现只有这一个用例，而且报的是这个`NoClassDefFoundError:com/sun/tdk/jcov/runtime/Collect `。相信用过mooctest插件的人都见过这个报错，解决方法也很简单，就是maven-update。然后再次运行上面的命令就可以看到完整的测试用例了。
+可以发现只有这一个用例，而且报的是这个`NoClassDefFoundError:com/sun/tdk/jcov/runtime/Collect `。相信用过mooctest插件的人都见过这个报错，解决方法也很简单，就是maven-update。如果用的是eclipse，右击当前项目，选择
+Maven – Update Project…（我相信看到这篇文章的人用的都是eclipse，笑），然后再次运行上面的命令，就可以看到完整的测试用例了。
 
 但是生成的测试文件其实是直接不能运行的，因为缺少evosuite的运行环境，根本过不了编译。
 
