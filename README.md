@@ -16,7 +16,21 @@ java -jar evosuite-1.0.6.jar -projectCP ./ -class net.mooctest.Triangle
 
 `-projectCP`是为了指定生成的路径。这一步用可以用`-help`来显示可用的选项，中间还可以加上`-criterion`指定生成的标准，比如line、branch、cbranch、mutation 、exception，等等。
 
-这里会生成两个文件夹：`evosuite-report/`和`evosuite-tests/`。因为maven插件不可用，所以就手动把evosuite-tests里的测试文件（可能会有嵌套的目录，我这里是`Triangle_ESTest.java`和`Triangle_ESTest_scaffolding.java`）复制到对应maven项目的`test/`目录下运行JUnit测试。
+如果需要生成某个包里所有文件的测试用例，可以使用`-prefix`命令。比如：
+
+```
+java -jar evosuite-1.0.6.jar -projectCP ./ -prefix net.mooctest
+```
+
+这一步在运行evosuite的时候，可能会出现类似于这样的错误：
+
+```shell
+ERROR EvoSuite - Fatal crash on main EvoSuite process. Class using seed 1428172877144. Configuration id : null
+```
+
+这个有可能是JDK版本导致的报错，因为evosuite的稳定版本**只支持JDK1.8**。据说开发版本已经支持Java 9了，但是毕竟不太稳定，使用的时候还是要慎重，用稳定版的会比较保险。
+
+如果一切顺利，这里会生成两个文件夹：`evosuite-report/`和`evosuite-tests/`。因为maven插件不可用，所以就手动把evosuite-tests里的测试文件（可能会有嵌套的目录，我这里是`Triangle_ESTest.java`和`Triangle_ESTest_scaffolding.java`）复制到对应maven项目的`test/`目录下运行JUnit测试。
 
 也许你会发现生成的测试用例覆盖率很低，而且低得有点奇怪。我们可以打开生成的测试文件看一下：
 
