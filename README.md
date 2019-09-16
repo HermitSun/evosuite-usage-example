@@ -38,7 +38,13 @@ public void test0()  throws Throwable  {
 
 可以发现只有这一个用例，而且报的是这个`NoClassDefFoundError:com/sun/tdk/jcov/runtime/Collect `。相信用过mooctest插件的人都见过这个报错，解决方法也很简单，就是maven-update。然后再次运行上面的命令就可以看到完整的测试用例了。
 
-但是生成的测试文件其实是直接不能运行的，因为缺少evosuite的运行环境，根本过不了编译，需要在pom.xml里增加依赖配置：
+但是生成的测试文件其实是直接不能运行的，因为缺少evosuite的运行环境，根本过不了编译。
+
+如果只是为了补充测试用例，可以直接把生成的测试用例（主要是`Triangle_ESTest.java`）复制到原有的测试文件里，因为mooctest似乎只能识别原有的测试文件。
+
+> 这一点不确定，可能是我的打开方式不对。
+
+如果需要本地运行，就需要进一步在`pom.xml`里增加依赖配置：
 
 ```xml
 <dependency>
